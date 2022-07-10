@@ -63,7 +63,7 @@ input.onGesture(Gesture.LogoDown, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
-    music.startMelody(music.builtInMelody(Melodies.PowerUp), MelodyOptions.Once)
+    music.startMelody(music.builtInMelody(Melodies.JumpUp), MelodyOptions.Once)
     basic.clearScreen()
 })
 let led2 = 0
@@ -72,6 +72,7 @@ led1 = 2
 led2 = 2
 led.plot(led1, led2)
 music.setVolume(90)
+music.startMelody(music.builtInMelody(Melodies.PowerUp), MelodyOptions.Once)
 basic.forever(function () {
 	
 })
