@@ -63,7 +63,7 @@ input.onGesture(Gesture.LogoDown, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
-    pico()
+    music.startMelody(music.builtInMelody(Melodies.PowerUp), MelodyOptions.Once)
     basic.clearScreen()
 })
 let led2 = 0
